@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter point and speed");
+        /*System.out.println("Enter point and speed");
         System.out.print("x = ");
         int x = scan.nextInt();
         System.out.print("y = ");
@@ -36,6 +36,11 @@ public class Main {
         System.out.println(circle);
         circle.moveDown();
         circle.moveLeft();
-        System.out.println(circle);
+        System.out.println(circle);*/
+        MovableRectangle r = new MovableRectangle(0, 1, 1, -1);
+        System.out.println(r);
+        r.setWidth(7);
+        r.setLength(5);
+        System.out.println(r);
     }
 }

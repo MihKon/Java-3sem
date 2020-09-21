@@ -3,16 +3,17 @@ package pract5;
 public class MovablePoint implements Movable{
     int x, y, ySpeed, xSpeed;
 
-    public MovablePoint(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
 
     public MovablePoint(int x, int y, int ySpeed, int xSpeed) {
         this.x = x;
         this.y = y;
         this.ySpeed = ySpeed;
         this.xSpeed = xSpeed;
+    }
+
+    public MovablePoint(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 
     @Override
