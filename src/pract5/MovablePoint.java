@@ -3,6 +3,11 @@ package pract5;
 public class MovablePoint implements Movable{
     int x, y, ySpeed, xSpeed;
 
+    public MovablePoint(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
     public MovablePoint(int x, int y, int ySpeed, int xSpeed) {
         this.x = x;
         this.y = y;
@@ -40,6 +45,12 @@ public class MovablePoint implements Movable{
         this.x+=this.xSpeed;
     }
 
+    @Override
+    public void setSpeed(int xSpeed, int ySpeed) {
+        this.xSpeed = xSpeed;
+        this.ySpeed = ySpeed;
+    }
+
     public int getX() {
         return x;
     }
@@ -62,5 +73,13 @@ public class MovablePoint implements Movable{
 
     public void setxSpeed(int xSpeed) {
         this.xSpeed = xSpeed;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
     }
 }

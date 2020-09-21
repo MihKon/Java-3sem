@@ -1,16 +1,16 @@
 package pract4;
 
 public class Circle extends Shape{
-    double radius = 1;
+    public double radius = 1;
 
-    Circle(double r, String c, boolean f){
+    public Circle(double r, String c, boolean f){
         super(c, f);
         this.radius = r;
     }
-    Circle(double r){
+    public Circle(double r){
         this.radius =  r;
     }
-    Circle(){}
+    public Circle(){}
 
     public double getRadius() {
         return radius;

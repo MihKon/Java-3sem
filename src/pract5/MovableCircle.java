@@ -1,8 +1,14 @@
 package pract5;
 
-public class MovableCircle implements Movable{
-    int radius;
+import pract4.Circle;
+
+public class MovableCircle extends Circle implements Movable{
     MovablePoint center;
+
+    public MovableCircle(double radius, int x, int y) {
+        this.radius = radius;
+        this.center = new MovablePoint(x, y);
+    }
 
     public MovableCircle(int x, int y, int ySpeed, int xSpeed, int radius) {
         this.radius = radius;
@@ -12,13 +18,13 @@ public class MovableCircle implements Movable{
     @Override
     public String toString() {
         return "MovableCircle{" +
-                "radius=" + radius +
-                ", center=" + center +
+                "center=" + center +
+                ", radius=" + radius +
                 '}';
     }
 
-    public int getRadius() {
-        return radius;
+    public double getRadius() {
+        return this.radius;
     }
 
     public MovablePoint getCenter() {
@@ -29,8 +35,9 @@ public class MovableCircle implements Movable{
         this.radius = radius;
     }
 
-    public void setCenter(MovablePoint center) {
-        this.center = center;
+    public void setCenter(int x, int y) {
+        this.center.setX(x);
+        this.center.setY(y);
     }
 
     @Override
@@ -51,5 +58,10 @@ public class MovableCircle implements Movable{
     @Override
     public void moveRight() {
         this.center.moveRight();
+    }
+
+    @Override
+    public void setSpeed(int xSpeed, int ySpeed) {
+        this.center.setSpeed(xSpeed, ySpeed);
     }
 }

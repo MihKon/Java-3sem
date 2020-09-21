@@ -1,14 +1,14 @@
 package pract4;
 
 public abstract class Shape {
-    String color = "red";
-    boolean filled = true;
+    public String color = "red";
+    public boolean filled = true;
 
-    Shape(String c, boolean f){
+    public Shape(String c, boolean f){
         this.color = c;
         this.filled =f;
     }
-    Shape(){}
+    public Shape(){}
 
     public String getColor() {
         return color;
