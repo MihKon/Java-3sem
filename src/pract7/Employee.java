@@ -7,22 +7,20 @@ public class Employee {
     double constSalary;
     EmployeePosition employeePosition;
 
-    public Employee(String surname, String name, String job, EmployeePosition employeePosition) {
-        if (job == "operator") {
+    public Employee(String name, String surname, EmployeePosition employeePosition) {
+        if (employeePosition instanceof Operator) {
             this.constSalary = 20000;
-            this.name = name;
-            this.surname = surname;
         }
-        if (job == "manager") {
+        if (employeePosition instanceof Manager) {
             this.constSalary = 60000;
-            this.name = name;
-            this.surname = surname;
         }
-        if (job == "topManager") {
+        if (employeePosition instanceof TopManager) {
             this.constSalary = 85000;
-            this.name = name;
-            this.surname = surname;
         }
+        this.name = name;
+        this.surname = surname;
+        this.job = employeePosition.getJobTitle();
+        this.employeePosition = employeePosition;
     }
 
     public String getSurname() {
@@ -45,8 +43,9 @@ public class Employee {
         return job;
     }
 
-    public void setJob(String job) {
-        this.job = job;
+    public void setJob(EmployeePosition employeePosition) {
+        this.employeePosition = employeePosition;
+        this.job = employeePosition.getJobTitle();
     }
 
     public double getConstSalary() {
@@ -57,15 +56,7 @@ public class Employee {
         this.constSalary = constSalary;
     }
 
-    public void setManager(String surname, String name, String job, double constSalary) {
-
-    }
-
-    public void setTopManager(String surname, String name, String job, double constSalary) {
-
-    }
-
-    public void setOperator(String surname, String name, String job, double constSalary) {
-
+    public EmployeePosition getEmployeePosition() {
+        return employeePosition;
     }
 }
