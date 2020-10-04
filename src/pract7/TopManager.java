@@ -18,7 +18,7 @@ public class TopManager implements EmployeePosition{
 
     @Override
     public double calcSalary(double baseSalary) {
-        if (baseSalary>10000000)
+        if (income>10000000)
             return baseSalary+1.5*baseSalary;
         else
             return baseSalary;
