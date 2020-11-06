@@ -1,4 +1,4 @@
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\com\company\Main.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\com\company\Main.java
 ```java
 package com.company;
 
@@ -9,7 +9,7 @@ public class Main {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract1\Fifth.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract1\Fifth.java
 ```java
 package pract1;
 
@@ -32,7 +32,7 @@ public class Fifth {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract1\Fourth.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract1\Fourth.java
 ```java
 package pract1;
 
@@ -68,7 +68,7 @@ public class Fourth {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract1\Main.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract1\Main.java
 ```java
 package pract1;
 
@@ -104,7 +104,7 @@ public class Main {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract1\Second.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract1\Second.java
 ```java
 package pract1;
 
@@ -116,7 +116,7 @@ public class Second {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract1\Third.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract1\Third.java
 ```java
 package pract1;
 
@@ -131,7 +131,7 @@ public class Third {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract10\Main.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract10\Main.java
 ```java
 package pract10;
 
@@ -146,7 +146,7 @@ public class Main {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract10\MyCalculator.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract10\MyCalculator.java
 ```java
 package pract10;
 
@@ -293,7 +293,7 @@ public class MyCalculator extends JFrame {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract11\Test.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract11\Test.java
 ```java
 package pract11;
 
@@ -360,7 +360,7 @@ public class Test {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract12\Main.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract12\Main.java
 ```java
 package pract12;
 
@@ -406,7 +406,7 @@ public class Main {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract12\TestEnum.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract12\TestEnum.java
 ```java
 package pract12;
 
@@ -436,7 +436,7 @@ public enum TestEnum {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract13\Card.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract13\Card.java
 ```java
 package pract13;
 
@@ -467,7 +467,7 @@ public class Card {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract13\Main.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract13\Main.java
 ```java
 package pract13;
 
@@ -497,21 +497,21 @@ public class Main {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract13\MyException.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract13\MyException.java
 ```java
 package pract13;
 
 public class MyException extends IllegalArgumentException{
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract13\MyRuntimeException.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract13\MyRuntimeException.java
 ```java
 package pract13;
 
 public class MyRuntimeException extends RuntimeException{
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract14\Main.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract14\Main.java
 ```java
 package pract14;
 
@@ -583,7 +583,7 @@ public class Main {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract15_16\Node.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract15_16\Node.java
 ```java
 package pract15_16;
 
@@ -636,7 +636,7 @@ public class Node {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract15_16\State.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract15_16\State.java
 ```java
 package pract15_16;
 
@@ -698,7 +698,7 @@ public class State {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract15_16\Tree.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract15_16\Tree.java
 ```java
 package pract15_16;
 
@@ -760,7 +760,7 @@ public class Tree {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract17_18\Main.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract17_18\Main.java
 ```java
 package pract17_18;
 
@@ -775,6 +775,7 @@ public class Main {
     private static Path path = Paths.get("src").toAbsolutePath();
     private static String basePath = path.toString();
     private static PrintWriter writer = null;
+
     static {
         try {
             String result = "projects.md";
@@ -847,7 +848,7 @@ public class Main {
             try {
                 try (BufferedReader reader = new BufferedReader(new FileReader(file.getPath()))) {
                     if (writer != null) {
-                        writer.write("##" + file.getPath());
+                        writer.write("## " + file.getPath());
                         writer.write('\n');
                         writer.write("```java");
                         writer.write('\n');
@@ -875,7 +876,7 @@ public class Main {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract2\Ball.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract2\Ball.java
 ```java
 package pract2;
 
@@ -884,7 +885,7 @@ public class Ball {
     String colour = "Blue";
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract2\Book.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract2\Book.java
 ```java
 package pract2;
 
@@ -893,7 +894,7 @@ public class Book {
     String colour = "Green";
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract2\Dog.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract2\Dog.java
 ```java
 package pract2;
 
@@ -934,7 +935,7 @@ public class Dog {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract2\DogKennel.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract2\DogKennel.java
 ```java
 package pract2;
 
@@ -955,7 +956,7 @@ public class DogKennel {
 
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract2\Main.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract2\Main.java
 ```java
 package pract2;
 
@@ -967,7 +968,7 @@ public class Main {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract2\Shape.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract2\Shape.java
 ```java
 package pract2;
 
@@ -986,7 +987,7 @@ public class Shape {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract3\Book.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract3\Book.java
 ```java
 package pract3;
 
@@ -1036,7 +1037,7 @@ public class Book {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract3\BookTest.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract3\BookTest.java
 ```java
 package pract3;
 
@@ -1055,7 +1056,7 @@ public class BookTest {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract3\Circle.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract3\Circle.java
 ```java
 package pract3;
 
@@ -1093,7 +1094,7 @@ public class Circle {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract3\CircleTest.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract3\CircleTest.java
 ```java
 package pract3;
 
@@ -1110,7 +1111,7 @@ public class CircleTest {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract3\Hand.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract3\Hand.java
 ```java
 package pract3;
 
@@ -1140,7 +1141,7 @@ public class Hand {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract3\Head.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract3\Head.java
 ```java
 package pract3;
 
@@ -1170,7 +1171,7 @@ public class Head {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract3\Human.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract3\Human.java
 ```java
 package pract3;
 
@@ -1240,7 +1241,7 @@ public class Human {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract3\Leg.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract3\Leg.java
 ```java
 package pract3;
 
@@ -1270,7 +1271,7 @@ public class Leg {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract3\Main.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract3\Main.java
 ```java
 package pract3;
 
@@ -1333,7 +1334,7 @@ public class Main {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract4\Circle.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract4\Circle.java
 ```java
 package pract4;
 
@@ -1379,7 +1380,7 @@ public class Circle extends Shape{
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract4\Main.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract4\Main.java
 ```java
 package pract4;
 
@@ -1391,7 +1392,7 @@ public class Main {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract4\Rectangle.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract4\Rectangle.java
 ```java
 package pract4;
 
@@ -1449,7 +1450,7 @@ public class Rectangle extends Shape{
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract4\Shape.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract4\Shape.java
 ```java
 package pract4;
 
@@ -1498,7 +1499,7 @@ public abstract class Shape {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract4\Square.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract4\Square.java
 ```java
 package pract4;
 
@@ -1538,7 +1539,7 @@ public class Square extends Rectangle{
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract5\Main.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract5\Main.java
 ```java
 package pract5;
 
@@ -1587,7 +1588,7 @@ public class Main {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract5\Movable.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract5\Movable.java
 ```java
 package pract5;
 
@@ -1599,7 +1600,7 @@ public interface Movable {
     public void setSpeed(int xSpeed, int ySpeed);
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract5\MovableCircle.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract5\MovableCircle.java
 ```java
 package pract5;
 
@@ -1669,7 +1670,7 @@ public class MovableCircle extends Circle implements Movable{
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract5\MovablePoint.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract5\MovablePoint.java
 ```java
 package pract5;
 
@@ -1758,7 +1759,7 @@ public class MovablePoint implements Movable{
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract5\MovableRectangle.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract5\MovableRectangle.java
 ```java
 package pract5;
 
@@ -1843,7 +1844,7 @@ public class MovableRectangle implements Movable{
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract6\Main.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract6\Main.java
 ```java
 package pract6;
 
@@ -1952,7 +1953,7 @@ public class Main {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract6\Nickelback.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract6\Nickelback.java
 ```java
 package pract6;
 
@@ -1990,7 +1991,7 @@ public class Nickelback {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract7\Company.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract7\Company.java
 ```java
 package pract7;
 
@@ -2072,7 +2073,7 @@ public class Company {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract7\Employee.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract7\Employee.java
 ```java
 package pract7;
 
@@ -2137,7 +2138,7 @@ public class Employee {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract7\EmployeePosition.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract7\EmployeePosition.java
 ```java
 package pract7;
 
@@ -2146,7 +2147,7 @@ public interface EmployeePosition {
     double calcSalary(double baseSalary);
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract7\Main.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract7\Main.java
 ```java
 package pract7;
 
@@ -2202,7 +2203,7 @@ public class Main {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract7\Manager.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract7\Manager.java
 ```java
 package pract7;
 
@@ -2229,7 +2230,7 @@ public class Manager implements EmployeePosition{
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract7\Operator.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract7\Operator.java
 ```java
 package pract7;
 
@@ -2245,7 +2246,7 @@ public class Operator implements EmployeePosition{
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract7\TopManager.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract7\TopManager.java
 ```java
 package pract7;
 
@@ -2274,7 +2275,7 @@ public class TopManager implements EmployeePosition{
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract9\Company.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract9\Company.java
 ```java
 package pract9;
 
@@ -2320,7 +2321,7 @@ public class Company {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract9\Employee.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract9\Employee.java
 ```java
 package pract9;
 
@@ -2396,7 +2397,7 @@ public class Employee {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract9\EmployeesHandler.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract9\EmployeesHandler.java
 ```java
 package pract9;
 
@@ -2406,7 +2407,7 @@ public interface EmployeesHandler {
     public void HandleEmployees(Employee employee);
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract9\EmployeesSelector.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract9\EmployeesSelector.java
 ```java
 package pract9;
 
@@ -2429,7 +2430,7 @@ public class EmployeesSelector implements EmployeesHandler {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract9\EmployeesSignal.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract9\EmployeesSignal.java
 ```java
 package pract9;
 
@@ -2437,7 +2438,7 @@ public interface EmployeesSignal {
     boolean isThisEmployee(Employee e);
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\pract9\Main.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\pract9\Main.java
 ```java
 package pract9;
 
@@ -2486,7 +2487,7 @@ public class Main {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\sidequests\Main.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\sidequests\Main.java
 ```java
 package sidequests;
 
@@ -2511,7 +2512,7 @@ public class Main {
     }
 }
 ```
-##C:\Users\miha-\IdeaProjects\Java-3sem\src\sidequests\Nickelback.java
+## C:\Users\miha-\IdeaProjects\Java-3sem\src\sidequests\Nickelback.java
 ```java
 package sidequests;
 

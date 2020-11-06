@@ -84,7 +84,7 @@ public class Main {
             try {
                 try (BufferedReader reader = new BufferedReader(new FileReader(file.getPath()))) {
                     if (writer != null) {
-                        writer.write("##" + file.getPath());
+                        writer.write("## " + file.getPath());
                         writer.write('\n');
                         writer.write("```java");
                         writer.write('\n');
