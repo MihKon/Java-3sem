@@ -9,8 +9,8 @@ public class Card {
         cash += bonus;
     }
 
-    public void withdrawCash(double money) throws MyException{
-        if (cash<money)
+    public void withdrawCash(double money) throws MyException {
+        if (cash < money)
             throw new MyException();
         cash -= money;
     }
