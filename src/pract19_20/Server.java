@@ -1,14 +1,10 @@
 package pract19_20;
 
-import org.w3c.dom.ls.LSOutput;
-
-import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
-import java.net.SocketException;
 import java.util.ArrayList;
 
 public class Server {
@@ -26,7 +22,15 @@ public class Server {
                 //System.out.println(packet.getAddress());
                 if (!ports.contains(packet.getPort()))
                     ports.add(packet.getPort());
+                int t = 0;
+                for (int i = 0; i < ports.size(); i++) {
+                    if (ports.get(i) == packet.getPort())
+                        t++;
+                }
                 String message = new String(buffer, 0, packet.getLength());
+                if (t == 0) {
+                    socket.send(new DatagramPacket(message.getBytes(), 0, packet.getLength() + 20, InetAddress.getByName("255.255.255.255"), packet.getPort()));
+                }
                 writer.write(message + "\n");
                 System.out.println(message);
                 for (int i : ports) {

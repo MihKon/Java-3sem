@@ -22,11 +22,15 @@ public class Client {
 
     public static void main(String[] args) throws IOException {
         System.out.print("Введите имя пользователя: ");
-        name = scan.nextLine();
-        socket.send(new DatagramPacket(name.getBytes(), 0, name.length(), InetAddress.getByName("127.0.0.1"), 2859));
-        System.out.println("Отлично, " + name + ". Общайтесь!");
         DatagramSocket socket = new DatagramSocket();
         Thread input = new Thread(() -> {
+            name = scan.nextLine();
+            try {
+                socket.send(new DatagramPacket(name.getBytes(), 0, name.length(), InetAddress.getByName("127.0.0.1"), 2859));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            //System.out.println("Отлично, " + name + ". Общайтесь!");
             while (true){
                 DateTimeFormatter f = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
                 ZoneId zone = ZoneId.of("Europe/Moscow");
