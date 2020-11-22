@@ -10,7 +10,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
-public class MainWithFile implements ItemsStore{
+public class MainWithFile implements ItemsStore {
     private String path = "src\\main\\java\\pract21_22\\data.json";
     private File file = new File(path);
     private Gson gson = new Gson();
@@ -99,9 +99,10 @@ public class MainWithFile implements ItemsStore{
 
     public List<Item> getAll() {
         List<Item> items = new ArrayList<>();
-        Type type = new TypeToken<List<Item>>(){}.getType();
+        Type type = new TypeToken<List<Item>>() {
+        }.getType();
         try (FileReader reader = new FileReader(file)) {
-             items = gson.fromJson(reader, type);
+            items = gson.fromJson(reader, type);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -111,7 +112,7 @@ public class MainWithFile implements ItemsStore{
     public Item get(int id) {
         Item item = null;
         List<Item> items = getAll();
-        for (Item i: items) {
+        for (Item i : items) {
             if (i.getId() == id)
                 item = i;
         }
@@ -126,11 +127,11 @@ public class MainWithFile implements ItemsStore{
         try {
             writer = new FileWriter(file);
             writer.write("[\n");
-            for (Item i: items) {
-                if(items.indexOf(i)!=items.size()-1)
-                    writer.write("\t"+gson.toJson(i)+",\n");
+            for (Item i : items) {
+                if (items.indexOf(i) != items.size() - 1)
+                    writer.write("\t" + gson.toJson(i) + ",\n");
                 else
-                    writer.write("\t"+gson.toJson(i)+"\n");
+                    writer.write("\t" + gson.toJson(i) + "\n");
             }
             writer.write("]");
             writer.close();
@@ -142,28 +143,28 @@ public class MainWithFile implements ItemsStore{
 
     public Item editItem(int id, Item item) {
         List<Item> items = getAll();
-        for (int i=0; i<items.size(); i++) {
+        for (int i = 0; i < items.size(); i++) {
             if (items.get(i).getId() == id) {
                 items.remove(items.get(i));
             }
         }
-        if (item.getId()==0)
-            item.setId(items.get(items.size()-1).getId()+1);
+        if (item.getId() == 0)
+            item.setId(items.get(items.size() - 1).getId() + 1);
         items.add(item);
         items.sort(new Comparator<Item>() {
             @Override
             public int compare(Item item, Item t1) {
-                return item.getId()-t1.getId();
+                return item.getId() - t1.getId();
             }
         });
         try {
             writer = new FileWriter(file);
             writer.write("[\n");
-            for (Item i: items) {
-                if(items.indexOf(i)!=items.size()-1)
-                    writer.write("\t"+gson.toJson(i)+",\n");
+            for (Item i : items) {
+                if (items.indexOf(i) != items.size() - 1)
+                    writer.write("\t" + gson.toJson(i) + ",\n");
                 else
-                    writer.write("\t"+gson.toJson(i)+"\n");
+                    writer.write("\t" + gson.toJson(i) + "\n");
             }
             writer.write("]");
             writer.close();
@@ -175,18 +176,18 @@ public class MainWithFile implements ItemsStore{
 
     public void deleteItem(Item item) {
         List<Item> items = getAll();
-        for (int i=0; i<items.size(); i++){
+        for (int i = 0; i < items.size(); i++) {
             if (items.get(i).getId() == item.getId())
                 items.remove(i);
         }
         try {
             writer = new FileWriter(file);
             writer.write("[\n");
-            for (Item i: items) {
-                if(items.indexOf(i)!=items.size()-1)
-                    writer.write("\t"+gson.toJson(i)+",\n");
+            for (Item i : items) {
+                if (items.indexOf(i) != items.size() - 1)
+                    writer.write("\t" + gson.toJson(i) + ",\n");
                 else
-                    writer.write("\t"+gson.toJson(i)+"\n");
+                    writer.write("\t" + gson.toJson(i) + "\n");
             }
             writer.write("]");
             writer.close();

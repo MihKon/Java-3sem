@@ -10,9 +10,10 @@ import java.net.http.HttpResponse;
 import java.util.List;
 import java.util.Scanner;
 
-public class WithServer implements ItemsStore{
+public class WithServer implements ItemsStore {
     private static HttpClient httpClient = HttpClient.newHttpClient();
     private static Gson gson = new Gson();
+
     public WithServer() {
         Scanner scan = new Scanner(System.in);
         int n;
@@ -102,7 +103,7 @@ public class WithServer implements ItemsStore{
     public Item get(int id) {
         HttpRequest request = HttpRequest.newBuilder()
                 .GET()
-                .uri(URI.create("http://80.87.199.76:3000/objects?id="+id))
+                .uri(URI.create("http://80.87.199.76:3000/objects?id=" + id))
                 .build();
         try {
             HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
@@ -139,7 +140,7 @@ public class WithServer implements ItemsStore{
         String body = gson.toJson(item);
         HttpRequest request = HttpRequest.newBuilder()
                 .PUT(HttpRequest.BodyPublishers.ofString(body))
-                .uri(URI.create("http://80.87.199.76:3000/objects/"+id))
+                .uri(URI.create("http://80.87.199.76:3000/objects/" + id))
                 .setHeader("Content-Type", "application/json")
                 .build();
         try {
@@ -157,7 +158,7 @@ public class WithServer implements ItemsStore{
     public void deleteItem(Item item) {
         HttpRequest request = HttpRequest.newBuilder()
                 .DELETE()
-                .uri(URI.create("http://80.87.199.76:3000/objects/"+item.getId()))
+                .uri(URI.create("http://80.87.199.76:3000/objects/" + item.getId()))
                 .setHeader("Content-Type", "application/json")
                 .build();
         try {
