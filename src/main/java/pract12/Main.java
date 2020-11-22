@@ -4,13 +4,13 @@ import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
-        for (TestEnum e: TestEnum.values()){
+        for (TestEnum e : TestEnum.values()) {
             printColorText(e);
         }
     }
 
     public static void printColorText(TestEnum testEnum) {
-       switch (testEnum) {
+        switch (testEnum) {
             case RED:
                 testEnum.printText("THIS IS RED", testEnum);
                 break;
@@ -32,12 +32,12 @@ public class Main {
             case WHITE:
                 testEnum.printText("THIS IS WHITE", testEnum);
                 break;
-           case TRON:
-               testEnum.printText("THIS IS TRON. THE SYSTEM IS WAITING YOU.", testEnum);
-               break;
-           case USSR:
-               testEnum.printText("SOVIET UNION", testEnum);
-               break;
+            case TRON:
+                testEnum.printText("THIS IS TRON. THE SYSTEM IS WAITING YOU.", testEnum);
+                break;
+            case USSR:
+                testEnum.printText("SOVIET UNION", testEnum);
+                break;
         }
     }
 }
