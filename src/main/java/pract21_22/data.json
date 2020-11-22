@@ -1,0 +1,7 @@
+[
+	{"id":1,"data":"hello, world","isGood":true,"description":"something"},
+	{"id":2,"data":"whoooho","isGood":false,"description":"xxxxxx"},
+	{"id":3,"data":"8888888","isGood":false,"description":"o, hi, mark!"},
+	{"id":5,"data":"smile","isGood":true,"description":"hello"},
+	{"id":7,"data":"bye","isGood":false,"description":"fromMain"}
+]
