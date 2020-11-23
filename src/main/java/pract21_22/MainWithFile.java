@@ -1,6 +1,7 @@
 package pract21_22;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 import java.io.*;
@@ -13,7 +14,7 @@ import java.util.Scanner;
 public class MainWithFile implements ItemsStore {
     private String path = "src\\main\\java\\pract21_22\\data.json";
     private File file = new File(path);
-    private Gson gson = new Gson();
+    private Gson gson = new GsonBuilder().setPrettyPrinting().create();
     private FileWriter writer;
 
     public MainWithFile() {

@@ -1,6 +1,8 @@
 package pract21_22;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 
 import java.io.IOException;
 import java.net.URI;
@@ -12,15 +14,15 @@ import java.util.Scanner;
 
 public class WithServer implements ItemsStore {
     private static HttpClient httpClient = HttpClient.newHttpClient();
-    private static Gson gson = new Gson();
+    private static Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
     public WithServer() {
         Scanner scan = new Scanner(System.in);
         int n;
         while (true) {
-            System.out.println("Выберите действие:\n" +
+            System.out.println("\nВыберите действие:\n" +
                     "1 - получить все записи\n" +
-                    "2 - получить одну записьт\n" +
+                    "2 - получить одну запись\n" +
                     "3 - добавить запись\n" +
                     "4 - редактировать запись\n" +
                     "5 - удалить запись");
@@ -40,11 +42,16 @@ public class WithServer implements ItemsStore {
                 }
                 case 3: {
                     System.out.println("Введите данные новой записи: ");
+                    System.out.print("id - ");
                     int id = scan.nextInt();
+                    System.out.print("data - ");
                     String data = scan.next();
+                    System.out.print("isGood - ");
                     boolean isGood = scan.nextBoolean();
+                    System.out.print("description - ");
                     String description = scan.next();
-                    System.out.println(gson.toJson(addItem(new Item(id, data, isGood, description))));
+                    Item item = new Item(id, data, isGood, description);
+                    System.out.print(gson.toJson(addItem(item)));
                     break;
                 }
                 case 4: {
@@ -59,16 +66,25 @@ public class WithServer implements ItemsStore {
                             "3 - isGood\n" +
                             "4 - description\n" +
                             "Вводите последовательность: ");
-                    String s = scan.nextLine();
-                    if (s.contains("1"))
+                    String s = scan.next();
+                    if (s.contains("1")) {
+                        System.out.print("id - ");
                         id = scan.nextInt();
-                    if (s.contains("2"))
+                    }
+                    if (s.contains("2")) {
+                        System.out.print("data - ");
                         data = scan.next();
-                    if (s.contains("3"))
+                    }
+                    if (s.contains("3")) {
+                        System.out.print("isGood - ");
                         isGood = scan.nextBoolean();
-                    if (s.contains("4"))
+                    }
+                    if (s.contains("4")) {
+                        System.out.print("description - ");
                         description = scan.next();
-                    System.out.println(gson.toJson(editItem(id1, new Item(id, data, isGood, description))));
+                    }
+                    Item item = new Item(id, data, isGood, description);
+                    System.out.println(gson.toJson(editItem(id1, item)));
                     break;
                 }
                 case 5: {
@@ -78,8 +94,6 @@ public class WithServer implements ItemsStore {
                     break;
                 }
             }
-            System.out.println("\nЧтобы продолжить, нажмите 0");
-            n = scan.nextInt();
         }
     }
 
@@ -90,7 +104,8 @@ public class WithServer implements ItemsStore {
                 .build();
         try {
             HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
-            List<Item> list = gson.fromJson(response.body(), List.class);
+            List<Item> list = gson.fromJson(response.body(), new TypeToken<List<Item>>() {
+            }.getType());
             return list;
         } catch (IOException e) {
             e.printStackTrace();
@@ -101,20 +116,20 @@ public class WithServer implements ItemsStore {
     }
 
     public Item get(int id) {
+        Item item = null;
         HttpRequest request = HttpRequest.newBuilder()
                 .GET()
-                .uri(URI.create("http://80.87.199.76:3000/objects?id=" + id))
+                .uri(URI.create("http://80.87.199.76:3000/objects/" + id))
                 .build();
         try {
             HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
-            Item item = gson.fromJson(response.body(), Item.class);
-            return item;
+            item = gson.fromJson(response.body(), Item.class);
         } catch (IOException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        return null;
+        return item;
     }
 
     public Item addItem(Item item) {
@@ -126,7 +141,8 @@ public class WithServer implements ItemsStore {
                 .build();
         try {
             HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
-            Item newItem = gson.fromJson(response.body(), Item.class);
+            Item newItem = gson.fromJson(response.body(), new TypeToken<Item>() {
+            }.getType());
             return newItem;
         } catch (IOException e) {
             e.printStackTrace();
@@ -145,7 +161,8 @@ public class WithServer implements ItemsStore {
                 .build();
         try {
             HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
-            Item newItem = gson.fromJson(response.body(), Item.class);
+            Item newItem = gson.fromJson(response.body(), new TypeToken<Item>() {
+            }.getType());
             return newItem;
         } catch (IOException e) {
             e.printStackTrace();
