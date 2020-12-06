@@ -25,7 +25,7 @@ public class Worker {
     private final static String reports = "http://gitlessons2020.rtuitlab.ru:3000/reports";
     private static List<Task> taskList = new ArrayList<>();
     private static List<Report> reportList = new ArrayList<>();
-    //private static List<Report> reportList2 = new ArrayList<>();
+    private static List<Report> reportList2 = new ArrayList<>();
     private static String path = "src\\main\\java\\pract23_24\\db.json";
     //private static String path2 = "src\\main\\java\\pract23_24\\db2.json";
     private static File file = new File(path);
@@ -42,6 +42,7 @@ public class Worker {
 
             Report report = new Report(0, id, result);
             reportList.add(report);
+            reportList2.add(report);
             //System.out.println(gson.toJson(report));
 
             writeInFile();
@@ -64,19 +65,37 @@ public class Worker {
     }
 
     private void writeInFile() {
-        try {
-            FileWriter writer = new FileWriter(path);
-            writer.write("["+'\n');
-            for (int i = 0; i < reportList.size(); i++) {
-                writer.write(gson.toJson(reportList.get(i)));
-                if (i!=reportList.size()-1)
-                    writer.write(",");
-                writer.write('\n');
+        if (file==null) {
+            try {
+                FileWriter writer = new FileWriter(path, true);
+                writer.write("[" + '\n');
+                for (int i = 0; i < reportList.size(); i++) {
+                    writer.write(gson.toJson(reportList.get(i)));
+                    if (i != reportList.size() - 1)
+                        writer.write(",");
+                    writer.write('\n');
+                }
+                writer.write("]");
+                writer.close();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-            writer.write("]");
-            writer.close();
-        } catch (IOException e) {
-            e.printStackTrace();
+        }
+        else {
+            try {
+                FileWriter writer = new FileWriter(path);
+                writer.write("[" + '\n');
+                for (int i = 0; i < reportList2.size(); i++) {
+                    writer.append(gson.toJson(reportList2.get(i)));
+                    if (i != reportList2.size() - 1)
+                        writer.write(",");
+                    writer.write('\n');
+                }
+                writer.write("]");
+                writer.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -93,6 +112,7 @@ public class Worker {
                     text = reader.readLine();
                 }
                 reader.close();
+                reportList2 = gson.fromJson(task, new TypeToken<List<Report>>(){}.getType());
                 //System.out.println(task);
                 for (Task t : taskList) {
                     if (!(task.contains("\"taskId\": " + t.getId()))) {
