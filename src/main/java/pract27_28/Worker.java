@@ -16,25 +16,25 @@ public class Worker {
     private final static String path = "http://gitlessons2020.rtuitlab.ru:3000/reflectionTasks";
 
     @TypeOperation(name = "sum")
-    public void sum(Data data){
+    public void sum(Data data) {
         int s = 0;
-        for (int i: data.getNumbers()){
-            s+=i;
+        for (int i : data.getNumbers()) {
+            s += i;
         }
         System.out.println(s);
     }
 
     @TypeOperation(name = "print")
-    public void printWords(Data data){
-        for (String w: data.getWords()){
-            if (data.getWords().indexOf(w) != data.getWords().size()-1)
-                System.out.print(w+" "+data.getDelimeter()+" ");
+    public void printWords(Data data) {
+        for (String w : data.getWords()) {
+            if (data.getWords().indexOf(w) != data.getWords().size() - 1)
+                System.out.print(w + " " + data.getDelimeter() + " ");
             else
                 System.out.print(w);
         }
     }
 
-    public List<ReflectionTask> getTasks(){
+    public List<ReflectionTask> getTasks() {
         List<ReflectionTask> tasks = null;
         HttpRequest request = HttpRequest.newBuilder()
                 .GET()
@@ -42,7 +42,8 @@ public class Worker {
                 .build();
         try {
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-            tasks = gson.fromJson(response.body(), new TypeToken<List<ReflectionTask>>(){}.getType());
+            tasks = gson.fromJson(response.body(), new TypeToken<List<ReflectionTask>>() {
+            }.getType());
         } catch (IOException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
